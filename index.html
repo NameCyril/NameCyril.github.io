@@ -169,7 +169,17 @@ I’m passionate about information security and technology, and I’m always kee
       </div>
     </section>
 
-
+<script>
+    const btn = document.getElementById('translate-btn');
+    btn.addEventListener('click', () => {
+        document.body.classList.toggle('ru-active');
+        if (document.body.classList.contains('ru-active')) {
+            btn.textContent = 'Switch to English';
+        } else {
+            btn.textContent = 'Перевести на русский';
+        }
+    });
+</script>
 </BODY>
 
 </html>
